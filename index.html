@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Movie feed</title>
+        
+        <!--Getting local Bootstarp:-->
+        <link href="bootstrap-jquery/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="bootstrap-jquery/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+
+    </head>
+    <body>
+        <div class="container">
+            
+            <!--mainHeader-->
+            <header class="page-header">
+                <h1>Movie feed</h1>
+            </header><!--end mainHeader-->
+
+            <!--SEARCH-->
+            <div class="inpute-group">
+
+                <!--searchInput-->
+                <input id="searchTermTxt" class="form-control" type="text" placeholder="Search for a movie..">
+                <br><!--add space-->
+                
+                <!--searchMovieBtn-->
+                <div class="input-group-btn">
+                    <input id="searchMovieBtn" class="btn btn-success" type="button" value="Search">
+                </div><!--end searchMovieBtn-->
+                <br><!--add space-->
+                
+            </div><!--end SEARCH-->
+
+            <div id="mainContent" class="row"></div><!--Result from API comes here-->
+            
+        </div><!--end container-->
+        
+        <!--Getting JavaScript: (Industry standard - always down here)-->
+        <script src="bootstrap-jquery/js/jquery.js"></script>
+        <script src="scripts/movie-feed.js"></script>
+
+    </body>
+</html>
